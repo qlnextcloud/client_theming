@@ -32,29 +32,36 @@ namespace OCC {
  * @brief The NextcloudTheme class
  * @ingroup libsync
  */
-class NextcloudTheme : public Theme
+//class NextcloudTheme : public Theme
+class MicrocloudTheme : public Theme
 {
 
 public:
-    NextcloudTheme() {};
+    //NextcloudTheme() {};
+    MicrocloudTheme() {};
 
     QString configFileName() const  {
-        return QLatin1String("nextcloud.cfg");
+        //return QLatin1String("nextcloud.cfg");
+        return QLatin1String("microcloud.cfg");
     }
 
     QIcon trayFolderIcon( const QString& ) const  {
-        return themeIcon( QLatin1String("Nextcloud-icon") );
+        //return themeIcon( QLatin1String("Nextcloud-icon") );
+        return themeIcon( QLatin1String("Microcloud-icon") );
     }
     QIcon applicationIcon() const  {
-        return themeIcon( QLatin1String("Nextcloud-icon") );
+        //return themeIcon( QLatin1String("Nextcloud-icon") );
+        return themeIcon( QLatin1String("Microcloud-icon") );
     }
 
     QString updateCheckUrl() const {
-        return QLatin1String("https://updates.nextcloud.org/client/");
+        //return QLatin1String("https://updates.nextcloud.org/client/");
+        return QLatin1String("https://github.com/qlnextcloud");
     }
 
     QString helpUrl() const {
-        return QString::fromLatin1("https://docs.nextcloud.com/desktop/2.2/").arg(MIRALL_VERSION_MAJOR).arg(MIRALL_VERSION_MINOR);
+        //return QString::fromLatin1("https://docs.nextcloud.com/desktop/2.2/").arg(MIRALL_VERSION_MAJOR).arg(MIRALL_VERSION_MINOR);
+        return QString::fromLatin1("https://github.com/qlnextcloud").arg(MIRALL_VERSION_MAJOR).arg(MIRALL_VERSION_MINOR);
     }
 
 #ifndef TOKEN_AUTH_ONLY

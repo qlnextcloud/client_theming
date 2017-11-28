@@ -4,9 +4,9 @@ set( APPLICATION_EXECUTABLE "microcloud" )
 set( APPLICATION_DOMAIN     "github.com/isshe" )
 set( APPLICATION_VENDOR     "Microcloud GmbH" )
 set( APPLICATION_UPDATE_URL "https://updates.microcloud.org/client/" CACHE string "URL for updater" )
-set( APPLICATION_ICON_NAME  "Nextcloud" )
+set( APPLICATION_ICON_NAME  "Microcloud" )
 
-set( THEME_CLASS            "NextcloudTheme" )
+set( THEME_CLASS            "MicrocloudTheme" )
 set( APPLICATION_REV_DOMAIN "com.microcloud.desktopclient" )
 set( WIN_SETUP_BITMAP_PATH  "${OEM_THEME_DIR}/win" )
 
